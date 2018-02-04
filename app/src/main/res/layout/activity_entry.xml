@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="56dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:animateLayoutChanges="true"
+    tools:context="com.example.movementsensor.Entry">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="select type of server to start"/>
+
+
+   <CheckBox
+       android:id="@+id/cb_cloud"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_gravity="center"
+       android:text="Cloud"/>
+    <LinearLayout
+        android:id="@+id/cloud_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_localhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Local Host" />
+    <LinearLayout
+        android:id="@+id/localhost_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:layout_gravity="center"
+
+        android:text="Next"/>
+
+</LinearLayout>
